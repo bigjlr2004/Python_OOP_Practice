@@ -6,7 +6,8 @@ from pond_animals import Geese, Goldfish, Catfish, Mallard, Frog
 def main():
     George = Goldfish("George", "Albino")
     Kermit = Frog("Kermit", "Green Frog")
-    Donkee = Donkey("Donkey", "Talking Donkey")
+    Donkee = Donkey("Donkey", "Talking Donkey", "Evening")
+    Drama = Llama("Drama", "House Llama", "Morning")
 
     print("--Animals--")
     print("------------")
@@ -15,6 +16,8 @@ def main():
     print(Kermit.name)
     print("------------")
     print(George.name)
+    print("------------")
+    Drama.print_petter()
 
 
 if __name__ == "__main__":
