@@ -21,6 +21,7 @@ def main():
     print("--Animals--")
     print("------------")
     print(Donkee.name)
+    print(Donkee)
     print("------------")
     print(Kermit.name)
     print("------------")
@@ -28,6 +29,9 @@ def main():
     print("------------")
     Drama.feed()
     print(Donkee)
+    print(Drama)
+
+    print(Kermit)
 
 
 if __name__ == "__main__":
