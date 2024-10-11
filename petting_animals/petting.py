@@ -1,102 +1,76 @@
 from datetime import date
+from Animal import Animal
 
+class Llama(Animal):
 
-class Llama:
-
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal with a default value.
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+        super().__init__(name, species, food, chip_num)
         self.shift = shift
         self.walking = True
-        self.food = food
 
     def print_petter(self):
         print(
             f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
         )
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-
-
-class Donkey:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Donkey(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.shift = shift
         self.walking = True
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+    def print_petter(self):
+        print(
+            f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
+        )
 
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+
+class Goat(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift
+        self.walking = True
+    
+    def print_petter(self):
+        print(
+            f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
+        )
+
+    
 
 
-class Goat:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Teddy_Bear(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.shift = shift
         self.walking = True
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+    def print_petter(self):
+        print(
+            f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
+        )
 
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
 
-
-class Teddy_Bear:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Monkey(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.shift = shift
         self.walking = True
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+    def print_petter(self):
+        print(
+            f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
+        )
 
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
 
-
-class Monkey:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Koala(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, shift, food, chip_num)
         self.shift = shift
         self.walking = True
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-
-
-class Koala:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.shift = shift
-        self.walking = True
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+    def print_petter(self):
+        print(
+            f"{self.name} the {self.species} is available to pet during the {self.shift} shift."
+        )
